@@ -6,11 +6,11 @@ import {
   Alert,
   KeyboardAvoidingView,
   Platform,
+  SafeAreaView,
   ScrollView,
   StyleSheet,
   View,
 } from "react-native";
-import { SafeAreaView } from "react-native";
 import LoginForm from "../components/auth/LoginForm";
 import { auth, db } from "../Config/firebaseConfig";
 import { COLORS } from "../constants/colors";
