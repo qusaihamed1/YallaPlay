@@ -1,13 +1,11 @@
 export const COLORS = {
-    background: "#F7F7F7",
-    card: "#FFFFFF",
-    border: "#E5E5E5",
-    text: "#111111",
-    subText: "#555555",
-    primary: "#FF5A1F",
-    danger: "#FF2D20",
-    lightDanger: "#FFF1EF",
-    buttonGray: "#F2F2F2",
-    buttonGrayText: "#8C8C8C",
-    badgeBg: "#FFE9DD",
-  };
+  primary: "#21A366",
+  primaryDark: "#159A5A",
+  primaryLight: "#DDF5E8",
+  background: "#F3F4F6",
+  white: "#FFFFFF",
+  text: "#111827",
+  subText: "#6B7280",
+  border: "#E5E7EB",
+  mutedIcon: "#9CA3AF",
+};

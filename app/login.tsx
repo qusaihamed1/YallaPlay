@@ -1,7 +1,7 @@
 import { router } from "expo-router";
 import { signInWithEmailAndPassword } from "firebase/auth";
 import { doc, getDoc } from "firebase/firestore";
-import React, { useState } from "react";
+import { useState } from "react";
 import {
   Alert,
   KeyboardAvoidingView,
@@ -10,7 +10,7 @@ import {
   StyleSheet,
   View,
 } from "react-native";
-import { SafeAreaView } from "react-native-safe-area-context";
+import { SafeAreaView } from "react-native";
 import LoginForm from "../components/auth/LoginForm";
 import { auth, db } from "../Config/firebaseConfig";
 import { COLORS } from "../constants/colors";
@@ -50,7 +50,7 @@ export default function LoginScreen() {
         Alert.alert("Welcome", userData.fullName);
       }
 
-      router.replace("/");
+      router.replace("/home");
     } catch (error: any) {
       Alert.alert("Error", error?.message || "Login failed");
     } finally {
