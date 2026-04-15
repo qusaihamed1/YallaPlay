@@ -21,6 +21,9 @@ Design
 The UI/UX design for this project is available on Figma:
 https://www.figma.com/design/WEEs3lot09Kn77D0ElbKtq/Yalla-Play?node-id=1-37&t=f7k7r2NDMd4glkxC-1
 
+A simple introductory video for the website:
+https://drive.google.com/file/d/1C9CVHezt4KuBq4RvQfDWkZU981uMW5ai/view?usp=sharing
+
 Technologies :
 React Native (Expo)
 Firebase Authentication
