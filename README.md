@@ -1,6 +1,6 @@
 <Important Note
 The final submitted version of this project is available in the following branch:
-Qusai-Branch-last-Submitted
+Qusai-Branch-last-Submitted (not in the main )
 Due to differences in local repository setups during development, this branch contains the most updated and stable version of the project.
 Please refer to this branch for evaluation.>
 
