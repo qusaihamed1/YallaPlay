@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+YallaPlay is a mobile application designed to simplify football field reservations in the West Bank, Palestine. The app allows users to browse football fields, check available time slots, and book a field easily.
+
+=======
 <Important Note
 The final submitted version of this project is available in the following branch:
 Qusai-Branch-last-Submitted (not in the main )
@@ -42,3 +46,4 @@ Mohammed Habash
 
 Notes
 This application is a prototype and can be extended in the future with advanced features such as real-time booking systems, payment integration, and notifications.
+>>>>>>> 6a3814b831544d8d7e0d1f4beef064147cb76ed9

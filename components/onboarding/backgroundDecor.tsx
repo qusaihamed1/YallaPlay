@@ -1,6 +1,13 @@
+<<<<<<< HEAD
+import { useEffect, useRef } from "react";
+import { Animated, Dimensions, StyleSheet, View } from "react-native";
+
+const { width, height } = Dimensions.get("window");
+=======
 import React, { useEffect, useRef } from "react";
 import { Animated,StyleSheet, View } from "react-native";
 
+>>>>>>> 6a3814b831544d8d7e0d1f4beef064147cb76ed9
 
 const COLORS = {
   primaryLight: "#E6F4EA",
@@ -82,6 +89,19 @@ const styles = StyleSheet.create({
   },
 
   bgCircleOne: {
+<<<<<<< HEAD
+    width: width * 0.44,
+    height: width * 0.44,
+    top: height * 0.1,
+    right: -width * 0.1,
+  },
+
+  bgCircleTwo: {
+    width: width * 0.3,
+    height: width * 0.3,
+    bottom: height * 0.22,
+    left: -width * 0.08,
+=======
     width: 170,
     height: 170,
     top: 90,
@@ -93,16 +113,26 @@ const styles = StyleSheet.create({
     height: 120,
     bottom: 180,
     left: -30,
+>>>>>>> 6a3814b831544d8d7e0d1f4beef064147cb76ed9
   },
 
   bgCircleThree: {
     position: "absolute",
+<<<<<<< HEAD
+    width: width * 0.2,
+    height: width * 0.2,
+    borderRadius: 999,
+    backgroundColor: "#D9EEE0",
+    top: height * 0.23,
+    left: width * 0.08,
+=======
     width: 80,
     height: 80,
     borderRadius: 999,
     backgroundColor: "#D9EEE0",
     top: 180,
     left: 30,
+>>>>>>> 6a3814b831544d8d7e0d1f4beef064147cb76ed9
     opacity: 0.8,
   },
 });

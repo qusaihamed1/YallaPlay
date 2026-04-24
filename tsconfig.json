@@ -9,9 +9,13 @@
     "baseUrl": ".",
     "paths": {
       "@/*": ["*"]
+<<<<<<< HEAD
+    }
+=======
     },
 
     "ignoreDeprecations": "6.0"
+>>>>>>> 6a3814b831544d8d7e0d1f4beef064147cb76ed9
   },
   "include": [
     "**/*.ts",

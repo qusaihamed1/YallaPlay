@@ -1,5 +1,11 @@
+<<<<<<< HEAD
+import { Dimensions, StyleSheet, Text, TouchableOpacity, View } from "react-native";
+
+const { width } = Dimensions.get("window");
+=======
 import React from "react";
 import { StyleSheet, Text, TouchableOpacity, View } from "react-native";
+>>>>>>> 6a3814b831544d8d7e0d1f4beef064147cb76ed9
 
 const COLORS = {
   primary: "#2E8B57",
@@ -32,7 +38,11 @@ const styles = StyleSheet.create({
     flexDirection: "row",
     justifyContent: "space-between",
     alignItems: "center",
+<<<<<<< HEAD
+    paddingHorizontal: width * 0.06,
+=======
     paddingHorizontal: 22,
+>>>>>>> 6a3814b831544d8d7e0d1f4beef064147cb76ed9
     paddingTop: 4,
   },
 
@@ -51,18 +61,30 @@ const styles = StyleSheet.create({
   },
 
   logoBall: {
+<<<<<<< HEAD
+    fontSize: Math.min(width * 0.045, 16),
+=======
     fontSize: 16,
+>>>>>>> 6a3814b831544d8d7e0d1f4beef064147cb76ed9
     marginRight: 8,
   },
 
   logoText: {
+<<<<<<< HEAD
+    fontSize: Math.min(width * 0.04, 15),
+=======
     fontSize: 15,
+>>>>>>> 6a3814b831544d8d7e0d1f4beef064147cb76ed9
     fontWeight: "700",
     color: COLORS.primary,
   },
 
   skip: {
+<<<<<<< HEAD
+    fontSize: Math.min(width * 0.04, 15),
+=======
     fontSize: 15,
+>>>>>>> 6a3814b831544d8d7e0d1f4beef064147cb76ed9
     fontWeight: "700",
     color: COLORS.primary,
   },
