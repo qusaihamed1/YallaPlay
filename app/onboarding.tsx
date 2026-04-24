@@ -1,5 +1,9 @@
 import { router } from "expo-router";
+<<<<<<< HEAD
 import { useRef, useState } from "react";
+=======
+import React, { useRef, useState } from "react";
+>>>>>>> 6a3814b831544d8d7e0d1f4beef064147cb76ed9
 import {
   Animated,
   Dimensions,
@@ -14,7 +18,11 @@ import BackgroundDecor from "../components/onboarding/backgroundDecor";
 import OnboardingFooter from "../components/onboarding/onboardingFooter";
 import OnboardingHeader from "../components/onboarding/onboardingHeader";
 import OnboardingSlide from "../components/onboarding/onboardingSlide";
+<<<<<<< HEAD
 import { SlideItem, slides } from "../data/onboardingSlides";
+=======
+import { slides, SlideItem } from "../data/onboardingSlides";
+>>>>>>> 6a3814b831544d8d7e0d1f4beef064147cb76ed9
 
 const { width } = Dimensions.get("window");
 
@@ -23,7 +31,11 @@ const COLORS = {
 };
 
 export default function OnboardingScreen() {
+<<<<<<< HEAD
   const flatListRef = useRef<FlatList<SlideItem> | null>(null);
+=======
+  const flatListRef = useRef<FlatList<SlideItem>>(null);
+>>>>>>> 6a3814b831544d8d7e0d1f4beef064147cb76ed9
   const scrollX = useRef(new Animated.Value(0)).current;
   const [currentIndex, setCurrentIndex] = useState(0);
 
@@ -36,6 +48,7 @@ export default function OnboardingScreen() {
 
   const handleNext = () => {
     if (currentIndex < slides.length - 1) {
+<<<<<<< HEAD
       const nextIndex = currentIndex + 1;
 
       flatListRef.current?.scrollToOffset({
@@ -44,6 +57,12 @@ export default function OnboardingScreen() {
       });
 
       setCurrentIndex(nextIndex);
+=======
+      flatListRef.current?.scrollToIndex({
+        index: currentIndex + 1,
+        animated: true,
+      });
+>>>>>>> 6a3814b831544d8d7e0d1f4beef064147cb76ed9
     } else {
       router.replace("/login");
     }
@@ -69,11 +88,14 @@ export default function OnboardingScreen() {
         showsHorizontalScrollIndicator={false}
         onMomentumScrollEnd={handleMomentumScrollEnd}
         scrollEventThrottle={16}
+<<<<<<< HEAD
         getItemLayout={(_, index) => ({
           length: width,
           offset: width * index,
           index,
         })}
+=======
+>>>>>>> 6a3814b831544d8d7e0d1f4beef064147cb76ed9
         onScroll={Animated.event(
           [{ nativeEvent: { contentOffset: { x: scrollX } } }],
           { useNativeDriver: false }

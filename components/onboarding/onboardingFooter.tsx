@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import {
     Animated,
     Dimensions,
@@ -6,6 +7,10 @@ import {
     TouchableOpacity,
     View,
 } from "react-native";
+=======
+import React from "react";
+import { Animated, Dimensions, StyleSheet, Text, TouchableOpacity, View } from "react-native";
+>>>>>>> 6a3814b831544d8d7e0d1f4beef064147cb76ed9
 
 const { width } = Dimensions.get("window");
 
@@ -82,7 +87,11 @@ export default function OnboardingFooter({
 
 const styles = StyleSheet.create({
   footer: {
+<<<<<<< HEAD
     paddingHorizontal: width * 0.06,
+=======
+    paddingHorizontal: 24,
+>>>>>>> 6a3814b831544d8d7e0d1f4beef064147cb76ed9
     paddingBottom: 28,
   },
 
@@ -114,7 +123,11 @@ const styles = StyleSheet.create({
 
   primaryButtonText: {
     color: COLORS.white,
+<<<<<<< HEAD
     fontSize: Math.min(width * 0.04, 16),
+=======
+    fontSize: 16,
+>>>>>>> 6a3814b831544d8d7e0d1f4beef064147cb76ed9
     fontWeight: "800",
   },
 
@@ -122,6 +135,10 @@ const styles = StyleSheet.create({
     textAlign: "center",
     color: COLORS.subText,
     marginTop: 14,
+<<<<<<< HEAD
     fontSize: Math.min(width * 0.033, 13),
+=======
+    fontSize: 13,
+>>>>>>> 6a3814b831544d8d7e0d1f4beef064147cb76ed9
   },
 });

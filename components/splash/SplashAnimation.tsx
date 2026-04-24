@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import { useEffect, useRef } from "react";
 import {
     Animated,
@@ -11,6 +12,18 @@ import {
 
 const { width, height } = Dimensions.get("window");
 
+=======
+import React, { useEffect, useRef } from "react";
+import {
+  Animated,
+  Easing,
+  Image,
+  StyleSheet,
+  Text,
+  View,
+} from "react-native";
+
+>>>>>>> 6a3814b831544d8d7e0d1f4beef064147cb76ed9
 const COLORS = {
   primary: "#2E8B57",
   primaryLight: "#E6F4EA",
@@ -25,7 +38,11 @@ export default function SplashAnimation({
 }) {
   const ballScale = useRef(new Animated.Value(0.2)).current;
   const ballRotate = useRef(new Animated.Value(0)).current;
+<<<<<<< HEAD
   const ballTranslateY = useRef(new Animated.Value(height * 0.08)).current;
+=======
+  const ballTranslateY = useRef(new Animated.Value(80)).current;
+>>>>>>> 6a3814b831544d8d7e0d1f4beef064147cb76ed9
   const logoOpacity = useRef(new Animated.Value(0)).current;
   const logoTranslateY = useRef(new Animated.Value(30)).current;
   const taglineOpacity = useRef(new Animated.Value(0)).current;
@@ -172,6 +189,7 @@ export default function SplashAnimation({
     outputRange: ["0%", "100%"],
   });
 
+<<<<<<< HEAD
   const ringSize = Math.min(width * 0.48, 190);
   const logoWrapSize = Math.min(width * 0.4, 160);
   const logoSize = Math.min(width * 0.31, 125);
@@ -179,15 +197,30 @@ export default function SplashAnimation({
   return (
     <>
       <Animated.View style={[styles.flash, { opacity: flashOpacity }]} />
+=======
+  return (
+    <>
+      <Animated.View
+        style={[
+          styles.flash,
+          {
+            opacity: flashOpacity,
+          },
+        ]}
+      />
+>>>>>>> 6a3814b831544d8d7e0d1f4beef064147cb76ed9
 
       <View style={styles.centerContent}>
         <Animated.View
           style={[
             styles.ring,
             {
+<<<<<<< HEAD
               width: ringSize,
               height: ringSize,
               borderRadius: ringSize / 2,
+=======
+>>>>>>> 6a3814b831544d8d7e0d1f4beef064147cb76ed9
               opacity: ringOpacity,
               transform: [{ scale: ringScale }],
             },
@@ -198,9 +231,12 @@ export default function SplashAnimation({
           style={[
             styles.ballWrapper,
             {
+<<<<<<< HEAD
               width: logoWrapSize,
               height: logoWrapSize,
               borderRadius: logoWrapSize / 2,
+=======
+>>>>>>> 6a3814b831544d8d7e0d1f4beef064147cb76ed9
               transform: [
                 { translateY: ballTranslateY },
                 { scale: ballScale },
@@ -211,6 +247,7 @@ export default function SplashAnimation({
         >
           <Image
             source={require("../../assets/images/logo.png")}
+<<<<<<< HEAD
             style={[
               styles.logoImage,
               {
@@ -219,6 +256,9 @@ export default function SplashAnimation({
                 borderRadius: logoSize / 2,
               },
             ]}
+=======
+            style={styles.logoImage}
+>>>>>>> 6a3814b831544d8d7e0d1f4beef064147cb76ed9
             resizeMode="contain"
           />
         </Animated.View>
@@ -236,7 +276,18 @@ export default function SplashAnimation({
             Yalla <Text style={styles.brandHighlight}>Play</Text>
           </Text>
 
+<<<<<<< HEAD
           <Animated.Text style={[styles.tagline, { opacity: taglineOpacity }]}>
+=======
+          <Animated.Text
+            style={[
+              styles.tagline,
+              {
+                opacity: taglineOpacity,
+              },
+            ]}
+          >
+>>>>>>> 6a3814b831544d8d7e0d1f4beef064147cb76ed9
             Book fast. Play smart.
           </Animated.Text>
         </Animated.View>
@@ -245,7 +296,16 @@ export default function SplashAnimation({
       <View style={styles.bottomArea}>
         <View style={styles.loadingBar}>
           <Animated.View
+<<<<<<< HEAD
             style={[styles.loadingProgress, { width: progressWidth }]}
+=======
+            style={[
+              styles.loadingProgress,
+              {
+                width: progressWidth,
+              },
+            ]}
+>>>>>>> 6a3814b831544d8d7e0d1f4beef064147cb76ed9
           />
         </View>
       </View>
@@ -263,15 +323,31 @@ const styles = StyleSheet.create({
     flex: 1,
     alignItems: "center",
     justifyContent: "center",
+<<<<<<< HEAD
     paddingHorizontal: width * 0.06,
+=======
+    paddingHorizontal: 24,
+>>>>>>> 6a3814b831544d8d7e0d1f4beef064147cb76ed9
   },
 
   ring: {
     position: "absolute",
+<<<<<<< HEAD
+=======
+    width: 190,
+    height: 190,
+    borderRadius: 95,
+>>>>>>> 6a3814b831544d8d7e0d1f4beef064147cb76ed9
     backgroundColor: COLORS.primaryLight,
   },
 
   ballWrapper: {
+<<<<<<< HEAD
+=======
+    width: 160,
+    height: 160,
+    borderRadius: 80,
+>>>>>>> 6a3814b831544d8d7e0d1f4beef064147cb76ed9
     backgroundColor: "#EDF8F1",
     alignItems: "center",
     justifyContent: "center",
@@ -282,6 +358,7 @@ const styles = StyleSheet.create({
     elevation: 10,
   },
 
+<<<<<<< HEAD
   logoImage: {},
 
   brandContainer: {
@@ -291,6 +368,21 @@ const styles = StyleSheet.create({
 
   brandText: {
     fontSize: Math.min(width * 0.09, 36),
+=======
+  logoImage: {
+    width: 125,
+    height: 125,
+    borderRadius: 62,
+  },
+
+  brandContainer: {
+    alignItems: "center",
+    marginTop: 28,
+  },
+
+  brandText: {
+    fontSize: 36,
+>>>>>>> 6a3814b831544d8d7e0d1f4beef064147cb76ed9
     fontWeight: "900",
     color: COLORS.text,
     letterSpacing: 0.4,
@@ -302,14 +394,23 @@ const styles = StyleSheet.create({
 
   tagline: {
     marginTop: 10,
+<<<<<<< HEAD
     fontSize: Math.min(width * 0.038, 15),
+=======
+    fontSize: 15,
+>>>>>>> 6a3814b831544d8d7e0d1f4beef064147cb76ed9
     color: COLORS.subText,
     fontWeight: "600",
   },
 
   bottomArea: {
+<<<<<<< HEAD
     paddingHorizontal: width * 0.11,
     paddingBottom: height * 0.045,
+=======
+    paddingHorizontal: 40,
+    paddingBottom: 38,
+>>>>>>> 6a3814b831544d8d7e0d1f4beef064147cb76ed9
   },
 
   loadingBar: {

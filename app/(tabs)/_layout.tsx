@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import { Ionicons } from "@expo/vector-icons";
 import { Tabs } from "expo-router";
 import { View } from "react-native";
@@ -79,5 +80,39 @@ export default function TabsLayout() {
         }}
       />
     </>
+=======
+import { Tabs } from "expo-router";
+import React from "react";
+
+export default function TabLayout() {
+  return (
+    <Tabs
+      screenOptions={{
+        headerShown: false,
+        tabBarStyle: {
+          display: "none",
+        },
+      }}
+    >
+      <Tabs.Screen
+        name="index"
+        options={{
+          title: "Home",
+        }}
+      />
+      <Tabs.Screen
+        name="explore"
+        options={{
+          title: "Explore",
+        }}
+      />
+      <Tabs.Screen
+        name="home"
+        options={{
+          title: "Home",
+        }}
+      />
+    </Tabs>
+>>>>>>> 6a3814b831544d8d7e0d1f4beef064147cb76ed9
   );
 }

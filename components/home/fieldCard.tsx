@@ -1,4 +1,8 @@
 import { router } from "expo-router";
+<<<<<<< HEAD
+=======
+import React from "react";
+>>>>>>> 6a3814b831544d8d7e0d1f4beef064147cb76ed9
 import {
   Dimensions,
   Image,
@@ -9,6 +13,10 @@ import {
   View,
 } from "react-native";
 import { COLORS } from "../../constants/colors";
+<<<<<<< HEAD
+=======
+import { SportType } from "../../types/home";
+>>>>>>> 6a3814b831544d8d7e0d1f4beef064147cb76ed9
 
 const { width } = Dimensions.get("window");
 const cardRadius = 16;
@@ -19,10 +27,15 @@ type Props = {
   price: string;
   rating: string;
   availableNow?: boolean;
+<<<<<<< HEAD
   selectedSport: string;
   image?: ImageSourcePropType;
   disablePress?: boolean;
   
+=======
+  selectedSport: SportType;
+  image?: ImageSourcePropType;
+>>>>>>> 6a3814b831544d8d7e0d1f4beef064147cb76ed9
 };
 
 export default function FieldCard({
@@ -33,7 +46,10 @@ export default function FieldCard({
   availableNow,
   selectedSport,
   image,
+<<<<<<< HEAD
   disablePress,
+=======
+>>>>>>> 6a3814b831544d8d7e0d1f4beef064147cb76ed9
 }: Props) {
   const handlePress = () => {
     if (name === "Nablus Municipality Stadium") {
@@ -49,6 +65,7 @@ export default function FieldCard({
   const isClickable =
     name === "Nablus Municipality Stadium" || name === "Al-Salahiyya School";
 
+<<<<<<< HEAD
   if (disablePress) {
     return (
       <View style={styles.card}>
@@ -83,6 +100,8 @@ export default function FieldCard({
     );
   }
 
+=======
+>>>>>>> 6a3814b831544d8d7e0d1f4beef064147cb76ed9
   return (
     <TouchableOpacity
       activeOpacity={isClickable ? 0.85 : 1}
@@ -122,12 +141,22 @@ export default function FieldCard({
 
 const styles = StyleSheet.create({
   card: {
+<<<<<<< HEAD
   backgroundColor: COLORS.white,
   borderRadius: cardRadius,
   borderWidth: 1,
   borderColor: COLORS.border,
   padding: 12,
 },
+=======
+    backgroundColor: COLORS.white,
+    borderRadius: cardRadius,
+    borderWidth: 1,
+    borderColor: COLORS.border,
+    padding: 12,
+    marginBottom: 12,
+  },
+>>>>>>> 6a3814b831544d8d7e0d1f4beef064147cb76ed9
   heroImage: {
     width: "100%",
     height: width * 0.38,

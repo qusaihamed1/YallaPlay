@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+import React from "react";
+>>>>>>> 6a3814b831544d8d7e0d1f4beef064147cb76ed9
 import { Animated, Dimensions, StyleSheet, Text, View } from "react-native";
 import { SlideItem } from "../../data/onboardingSlides";
 
@@ -11,8 +15,13 @@ const COLORS = {
   white: "#FFFFFF",
 };
 
+<<<<<<< HEAD
 const CARD_WIDTH = Math.min(width * 0.82, 360);
 const CARD_HEIGHT = Math.min(height * 0.36, 310);
+=======
+const CARD_WIDTH = width * 0.82;
+const CARD_HEIGHT = height * 0.36;
+>>>>>>> 6a3814b831544d8d7e0d1f4beef064147cb76ed9
 
 export default function OnboardingSlide({
   item,
@@ -70,6 +79,10 @@ export default function OnboardingSlide({
               <Text style={styles.miniCardLabel}>Nearby</Text>
               <Text style={styles.miniCardValue}>12 Fields</Text>
             </View>
+<<<<<<< HEAD
+=======
+
+>>>>>>> 6a3814b831544d8d7e0d1f4beef064147cb76ed9
             <View style={styles.miniCard}>
               <Text style={styles.miniCardLabel}>Available</Text>
               <Text style={styles.miniCardValue}>Today</Text>
@@ -99,7 +112,11 @@ const styles = StyleSheet.create({
     width,
     alignItems: "center",
     justifyContent: "center",
+<<<<<<< HEAD
     paddingHorizontal: width * 0.06,
+=======
+    paddingHorizontal: 24,
+>>>>>>> 6a3814b831544d8d7e0d1f4beef064147cb76ed9
   },
 
   heroContainer: {
@@ -145,14 +162,24 @@ const styles = StyleSheet.create({
 
   badgeText: {
     color: COLORS.primary,
+<<<<<<< HEAD
     fontSize: Math.min(width * 0.03, 12),
+=======
+    fontSize: 12,
+>>>>>>> 6a3814b831544d8d7e0d1f4beef064147cb76ed9
     fontWeight: "700",
   },
 
   iconWrapper: {
+<<<<<<< HEAD
     width: Math.min(width * 0.28, 118),
     height: Math.min(width * 0.28, 118),
     borderRadius: 999,
+=======
+    width: 118,
+    height: 118,
+    borderRadius: 59,
+>>>>>>> 6a3814b831544d8d7e0d1f4beef064147cb76ed9
     backgroundColor: COLORS.primaryLight,
     alignItems: "center",
     justifyContent: "center",
@@ -160,7 +187,11 @@ const styles = StyleSheet.create({
   },
 
   emoji: {
+<<<<<<< HEAD
     fontSize: Math.min(width * 0.13, 56),
+=======
+    fontSize: 56,
+>>>>>>> 6a3814b831544d8d7e0d1f4beef064147cb76ed9
   },
 
   miniCardRow: {
@@ -174,20 +205,32 @@ const styles = StyleSheet.create({
     paddingVertical: 12,
     paddingHorizontal: 14,
     borderRadius: 16,
+<<<<<<< HEAD
     minWidth: Math.min(width * 0.28, 110),
+=======
+    minWidth: 110,
+>>>>>>> 6a3814b831544d8d7e0d1f4beef064147cb76ed9
     alignItems: "center",
     borderWidth: 1,
     borderColor: "#ECECEC",
   },
 
   miniCardLabel: {
+<<<<<<< HEAD
     fontSize: Math.min(width * 0.03, 12),
+=======
+    fontSize: 12,
+>>>>>>> 6a3814b831544d8d7e0d1f4beef064147cb76ed9
     color: COLORS.subText,
     marginBottom: 4,
   },
 
   miniCardValue: {
+<<<<<<< HEAD
     fontSize: Math.min(width * 0.035, 14),
+=======
+    fontSize: 14,
+>>>>>>> 6a3814b831544d8d7e0d1f4beef064147cb76ed9
     fontWeight: "700",
     color: COLORS.text,
   },
@@ -198,11 +241,16 @@ const styles = StyleSheet.create({
   },
 
   title: {
+<<<<<<< HEAD
     fontSize: Math.min(width * 0.075, 30),
+=======
+    fontSize: 30,
+>>>>>>> 6a3814b831544d8d7e0d1f4beef064147cb76ed9
     fontWeight: "800",
     textAlign: "center",
     color: COLORS.text,
     marginBottom: 14,
+<<<<<<< HEAD
     lineHeight: Math.min(width * 0.095, 38),
   },
 
@@ -211,6 +259,16 @@ const styles = StyleSheet.create({
     textAlign: "center",
     color: COLORS.subText,
     lineHeight: Math.min(width * 0.062, 25),
+=======
+    lineHeight: 38,
+  },
+
+  description: {
+    fontSize: 16,
+    textAlign: "center",
+    color: COLORS.subText,
+    lineHeight: 25,
+>>>>>>> 6a3814b831544d8d7e0d1f4beef064147cb76ed9
     maxWidth: 310,
   },
 });
