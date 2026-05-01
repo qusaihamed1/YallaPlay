@@ -1,8 +1,4 @@
 import { router } from "expo-router";
-<<<<<<< HEAD
-=======
-import React from "react";
->>>>>>> 6a3814b831544d8d7e0d1f4beef064147cb76ed9
 import {
   Dimensions,
   Image,
@@ -51,7 +47,9 @@ export default function FieldDetailsScreen() {
             <Text style={styles.title}>Nablus Municipality Stadium</Text>
 
             <View style={styles.metaRow}>
-              <Text style={styles.metaText}>📍 Nablus City · Central Location</Text>
+              <Text style={styles.metaText}>
+                📍 Nablus City · Central Location
+              </Text>
               <Text style={styles.metaText}>★★★★☆ 4.7</Text>
             </View>
 
@@ -98,19 +96,15 @@ export default function FieldDetailsScreen() {
               <TouchableOpacity
                 activeOpacity={0.9}
                 style={styles.bookButton}
-<<<<<<< HEAD
                 onPress={() =>
-                router.push({
-  pathname: "/(tabs)/booking",
-  params: {
-    name: "Nablus Municipality Stadium",
-    price: "200",
-  },
-})
-}
-=======
-                onPress={() => {}}
->>>>>>> 6a3814b831544d8d7e0d1f4beef064147cb76ed9
+                  router.push({
+                    pathname: "/(tabs)/booking",
+                    params: {
+                      name: "Nablus Municipality Stadium",
+                      price: "200",
+                    },
+                  })
+                }
               >
                 <Text style={styles.bookButtonText}>Book now</Text>
               </TouchableOpacity>
