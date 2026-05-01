@@ -6,18 +6,11 @@ import {
   Alert,
   KeyboardAvoidingView,
   Platform,
-<<<<<<< HEAD
-=======
   SafeAreaView,
->>>>>>> 6a3814b831544d8d7e0d1f4beef064147cb76ed9
   ScrollView,
   StyleSheet,
   View,
 } from "react-native";
-<<<<<<< HEAD
-import { SafeAreaView } from "react-native";
-=======
->>>>>>> 6a3814b831544d8d7e0d1f4beef064147cb76ed9
 import LoginForm from "../components/auth/LoginForm";
 import { auth, db } from "../Config/firebaseConfig";
 import { COLORS } from "../constants/colors";
@@ -96,7 +89,8 @@ export default function LoginScreen() {
               }}
               onSubmit={handleLogin}
               onForgotPassword={() => router.push("/forgot-password")}
-onGoToSignup={() => router.push("/signup")}            />
+              onGoToSignup={() => router.push("/signup")}
+            />
           </View>
         </ScrollView>
       </KeyboardAvoidingView>

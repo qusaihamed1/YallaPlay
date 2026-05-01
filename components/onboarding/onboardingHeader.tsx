@@ -1,28 +1,24 @@
-<<<<<<< HEAD
+import React from "react";
 import { Dimensions, StyleSheet, Text, TouchableOpacity, View } from "react-native";
 
 const { width } = Dimensions.get("window");
-=======
-import React from "react";
-import { StyleSheet, Text, TouchableOpacity, View } from "react-native";
->>>>>>> 6a3814b831544d8d7e0d1f4beef064147cb76ed9
 
 const COLORS = {
   primary: "#2E8B57",
   white: "#FFFFFF",
 };
 
-export default function OnboardingHeader({
-  onSkip,
-}: {
+type Props = {
   onSkip: () => void;
-}) {
+};
+
+export default function OnboardingHeader({ onSkip }: Props) {
   return (
     <View style={styles.header}>
       <View style={styles.logoPill}>
         <Text style={styles.logoBall}>⚽</Text>
         <Text style={styles.logoText}>
-          Yalla <Text style={{ color: "#2E8B57" }}>Play</Text>
+          Yalla <Text style={styles.logoTextHighlight}>Play</Text>
         </Text>
       </View>
 
@@ -38,14 +34,9 @@ const styles = StyleSheet.create({
     flexDirection: "row",
     justifyContent: "space-between",
     alignItems: "center",
-<<<<<<< HEAD
     paddingHorizontal: width * 0.06,
-=======
-    paddingHorizontal: 22,
->>>>>>> 6a3814b831544d8d7e0d1f4beef064147cb76ed9
     paddingTop: 4,
   },
-
   logoPill: {
     flexDirection: "row",
     alignItems: "center",
@@ -59,32 +50,20 @@ const styles = StyleSheet.create({
     shadowOffset: { width: 0, height: 4 },
     elevation: 2,
   },
-
   logoBall: {
-<<<<<<< HEAD
-    fontSize: Math.min(width * 0.045, 16),
-=======
     fontSize: 16,
->>>>>>> 6a3814b831544d8d7e0d1f4beef064147cb76ed9
     marginRight: 8,
   },
-
   logoText: {
-<<<<<<< HEAD
-    fontSize: Math.min(width * 0.04, 15),
-=======
     fontSize: 15,
->>>>>>> 6a3814b831544d8d7e0d1f4beef064147cb76ed9
     fontWeight: "700",
     color: COLORS.primary,
   },
-
+  logoTextHighlight: {
+    color: COLORS.primary,
+  },
   skip: {
-<<<<<<< HEAD
-    fontSize: Math.min(width * 0.04, 15),
-=======
     fontSize: 15,
->>>>>>> 6a3814b831544d8d7e0d1f4beef064147cb76ed9
     fontWeight: "700",
     color: COLORS.primary,
   },

@@ -1,16 +1,12 @@
-<<<<<<< HEAD
-import {
-    Animated,
-    Dimensions,
-    StyleSheet,
-    Text,
-    TouchableOpacity,
-    View,
-} from "react-native";
-=======
 import React from "react";
-import { Animated, Dimensions, StyleSheet, Text, TouchableOpacity, View } from "react-native";
->>>>>>> 6a3814b831544d8d7e0d1f4beef064147cb76ed9
+import {
+  Animated,
+  Dimensions,
+  StyleSheet,
+  Text,
+  TouchableOpacity,
+  View,
+} from "react-native";
 
 const { width } = Dimensions.get("window");
 
@@ -20,17 +16,19 @@ const COLORS = {
   white: "#FFFFFF",
 };
 
+type Props = {
+  count: number;
+  currentIndex: number;
+  scrollX: Animated.Value;
+  onNext: () => void;
+};
+
 export default function OnboardingFooter({
   count,
   currentIndex,
   scrollX,
   onNext,
-}: {
-  count: number;
-  currentIndex: number;
-  scrollX: Animated.Value;
-  onNext: () => void;
-}) {
+}: Props) {
   return (
     <View style={styles.footer}>
       <View style={styles.dotsRow}>
@@ -87,28 +85,21 @@ export default function OnboardingFooter({
 
 const styles = StyleSheet.create({
   footer: {
-<<<<<<< HEAD
     paddingHorizontal: width * 0.06,
-=======
-    paddingHorizontal: 24,
->>>>>>> 6a3814b831544d8d7e0d1f4beef064147cb76ed9
     paddingBottom: 28,
   },
-
   dotsRow: {
     flexDirection: "row",
     justifyContent: "center",
     alignItems: "center",
     marginBottom: 24,
   },
-
   dot: {
     height: 10,
     borderRadius: 10,
     backgroundColor: COLORS.primary,
     marginHorizontal: 5,
   },
-
   primaryButton: {
     backgroundColor: COLORS.primary,
     paddingVertical: 17,
@@ -120,25 +111,15 @@ const styles = StyleSheet.create({
     shadowOffset: { width: 0, height: 8 },
     elevation: 4,
   },
-
   primaryButtonText: {
     color: COLORS.white,
-<<<<<<< HEAD
-    fontSize: Math.min(width * 0.04, 16),
-=======
     fontSize: 16,
->>>>>>> 6a3814b831544d8d7e0d1f4beef064147cb76ed9
     fontWeight: "800",
   },
-
   bottomHint: {
     textAlign: "center",
     color: COLORS.subText,
     marginTop: 14,
-<<<<<<< HEAD
-    fontSize: Math.min(width * 0.033, 13),
-=======
     fontSize: 13,
->>>>>>> 6a3814b831544d8d7e0d1f4beef064147cb76ed9
   },
 });
