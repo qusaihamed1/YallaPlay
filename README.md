@@ -2,7 +2,7 @@ YallaPlay is a mobile application designed to simplify football field reservatio
 
 <Important Note
 The final submitted version of this project is available in the following branch:
-Qusai-Branch-last-Submitted (not in the main )
+Qusai-Finish-project-lastSubmission  (not in the main )
 Due to differences in local repository setups during development, this branch contains the most updated and stable version of the project.
 Please refer to this branch for evaluation.>
 
